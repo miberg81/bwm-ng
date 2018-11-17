@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'src/styles/_variables.scss';
-html,body,p{
-    color:$main-text-color;
+
+html,
+body,
+p {
+  color: $main-text-color;
 }
+
+

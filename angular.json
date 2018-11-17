@@ -7,8 +7,13 @@
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
-      "prefix": "app",
-      "schematics": {},
+      "prefix": "bwm",
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "scss",
+          "spec":false
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -52,7 +57,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "bwm-ng:build",
-            "port":7889
+            "port": 8765
           },
           "configurations": {
             "production": {
@@ -130,5 +135,12 @@
       }
     }
   },
-  "defaultProject": "bwm-ng"
+  "defaultProject": "bwm-ng",
+  "schematics": {
+    "@schematics/angular": {
+      "component": {
+        "spec": false
+      }
+    }
+  }
 }
