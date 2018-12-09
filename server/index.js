@@ -35,7 +35,7 @@ app.get('/rentals', function(req,res){
 });*/
 
 //in production: use POST variable:
-//const PORT = process.env.PORT || 3001;
-app.listen('3001', function () {
+const port = process.env.PORT || 3001;
+app.listen(port, function () {
   console.log('I am running');
 });
