@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent} from './common/header/header.component';
+import { UppercasePipe } from './common/pipes/uppercase.pipe';
 
 import { RentalModule } from './rental/rental.module';
 
@@ -14,12 +15,13 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    UppercasePipe
   ],
   imports: [
     RouterModule.forRoot(routes),
     BrowserModule,
-    RentalModule
+    RentalModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
